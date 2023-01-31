@@ -1,11 +1,15 @@
 package com.danielbatesuk.chatgpt;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,22 +23,27 @@ public class MainActivity extends AppCompatActivity {
         webView.getSettings().setDomStorageEnabled(true);
         webView.loadUrl("https://chat.openai.com/chat");
         webView.setWebViewClient(new WebViewClient());
+    }
 
-        SwipeRefreshLayout swipeRefreshLayout = findViewById(R.id.refreshWeb);
-        swipeRefreshLayout.setColorSchemeResources(R.color.primary_color_700);
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
 
-        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                if(webView.getUrl() == "https://chat.openai.com/auth/login") {
-                    webView.loadUrl("https://chat.openai.com/chat");
-                } else {
-                    webView.reload();
-                }
-                webView.reload();
-                swipeRefreshLayout.setRefreshing(false);
-            }
-        });
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        WebView webView = findViewById(R.id.web);
 
+        if(item.getItemId() == R.id.menu_refresh) {
+            webView.reload();
+        }
+
+        if(item.getItemId() == R.id.menu_github) {
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/DanielBatesUK/chatgpt-android-app"));
+            startActivity(intent);
+        }
+
+        return true;
     }
 }

@@ -5,9 +5,14 @@
         android:id="@+id/menu_refresh"
         android:icon="@drawable/baseline_refresh_24"
         android:title="@string/menu_refresh"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/menu_github"
         android:title="@string/menu_github"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_version"
+        android:enabled="false"
+        android:title="@string/menu_version"
         app:showAsAction="never" />
 </menu>

@@ -10,6 +10,8 @@ import android.view.MenuItem;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import java.util.Objects;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         WebView webView = findViewById(R.id.web);
         webView.getSettings().setJavaScriptEnabled(true);
@@ -28,6 +32,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
+
+        String versionName = "v" + BuildConfig.VERSION_NAME;
+        MenuItem menuItem = menu.findItem(R.id.menu_version);
+        menuItem.setTitle(versionName);
+
         return true;
     }
 
@@ -36,7 +45,11 @@ public class MainActivity extends AppCompatActivity {
         WebView webView = findViewById(R.id.web);
 
         if(item.getItemId() == R.id.menu_refresh) {
-            webView.reload();
+            if(!Objects.equals(webView.getUrl(), "https://chat.openai.com/auth/login")) {
+                webView.reload();
+            } else {
+                webView.loadUrl("https://chat.openai.com/chat");
+            }
         }
 
         if(item.getItemId() == R.id.menu_github) {

@@ -18,7 +18,7 @@ Simple webview ChatGPT Android app.
 
 ### About
 
-This is my first (and maybe last) attempt at making an Android app. I just wanted to try out Android Studio, and make a little ChatGPT app; for myself. This is so I can have a it listed in my app drawer, and have a nice themed icon on my (Pixel's) homescreen.
+This is my first (and maybe last) attempt at making an Android app. I just wanted to try out Android Studio, and make a little ChatGPT app; for myself. This is so I can have it listed in my app drawer, and have a nice themed icon on my (Pixel's) homescreen.
 
 ## Author
 

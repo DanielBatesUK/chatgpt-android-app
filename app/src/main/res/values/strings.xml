@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ChatGPT</string>
     <string name="menu_refresh">Refresh</string>
+    <string name="menu_openai">OpenAI Website</string>
     <string name="menu_github">GitHub</string>
     <string name="menu_version">Version</string>
 </resources>

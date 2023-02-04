@@ -13,8 +13,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="8dp" >
-        </WebView>
+            tools:layout_editor_absoluteY="8dp" />
+
+        <ProgressBar
+        android:id="@+id/prog"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentTop="true"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100" />
 
     </RelativeLayout>
 

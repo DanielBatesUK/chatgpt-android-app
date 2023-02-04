@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item
-        android:id="@+id/menu_refresh"
-        android:icon="@drawable/baseline_refresh_24"
-        android:title="@string/menu_refresh"
-        app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/menu_github"
-        android:title="@string/menu_github"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/menu_version"
-        android:enabled="false"
-        android:title="@string/menu_version"
-        app:showAsAction="never" />
+    <group android:id="@+id/menu_group_refresh">
+        <item
+            android:id="@+id/menu_refresh"
+            android:icon="@drawable/baseline_refresh_24"
+            android:title="@string/menu_refresh"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/menu_refresh2"
+            android:title="@string/menu_refresh"
+            app:showAsAction="never" />
+    </group>
+    <group android:id="@+id/menu_group_openai">
+        <item
+            android:id="@+id/menu_openai"
+            android:title="@string/menu_openai"
+            app:showAsAction="never" />
+    </group>
+    <group android:id="@+id/menu_group_github">
+        <item
+            android:id="@+id/menu_github"
+            android:title="@string/menu_github"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/menu_version"
+            android:enabled="false"
+            android:title="@string/menu_version"
+            app:showAsAction="never" />
+    </group>
 </menu>

@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         webView.loadUrl(chatgptUrl);
         webView.setWebViewClient(new WebViewClient());
         webView.setWebChromeClient(new WebChromeClient(){
-
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
                 super.onProgressChanged(view, newProgress);
@@ -59,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         WebView webView = findViewById(R.id.web);
-
         // Refresh
         if(item.getItemId() == R.id.menu_refresh || item.getItemId() == R.id.menu_refresh2) {
             if(!Objects.equals(webView.getUrl(), chatgptAuthUrl)) {
@@ -68,19 +66,16 @@ public class MainActivity extends AppCompatActivity {
                 webView.loadUrl(chatgptUrl);
             }
         }
-
-        // External: OpenAI
+        // External website: OpenAI
         if(item.getItemId() == R.id.menu_openai) {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(openAIUrl));
             startActivity(intent);
         }
-
-        // External: GitHub
+        // External website: GitHub
         if(item.getItemId() == R.id.menu_github) {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(githubURL));
             startActivity(intent);
         }
-
         return true;
     }
 }

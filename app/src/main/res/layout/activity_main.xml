@@ -17,6 +17,8 @@
         android:layout_height="2dp"
         android:layout_alignParentTop="true"
         style="?android:attr/progressBarStyleHorizontal"
-        android:max="100" />
+        android:max="100"
+        android:progress="0"
+        android:indeterminate="false" />
 </RelativeLayout>
 

@@ -22,7 +22,7 @@ This is my first (and maybe last) attempt at making an Android app. I just wante
 
 ### Installation
 
-Visit the [releases page](/releases) and download the latest version's .apk file onto your Android device and install via your package manger. Or download the latest .apk file onto your computer and install via USB/Wifi debugging with ADB: `adb install danielbatesuk-chatgpt-v*.*.*.apk`. 
+Visit the [releases page](https://github.com/DanielBatesUK/chatgpt-android-app/releases) and download the latest version's .apk file onto your Android device and install via your package manger. Or download the latest .apk file onto your computer and install via USB/Wifi debugging with ADB: `adb install danielbatesuk-chatgpt-v*.*.*.apk`. 
 
 ### Screenshots
 

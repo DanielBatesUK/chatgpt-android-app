@@ -20,6 +20,14 @@ Simple webview ChatGPT Android app.
 
 This is my first (and maybe last) attempt at making an Android app. I just wanted to try out Android Studio, and make a little ChatGPT app; for myself. This is so I can have it listed in my app drawer, and have a nice themed icon on my (Pixel's) homescreen.
 
+### Installation
+
+Visit the [releases page](https://github.com/DanielBatesUK/chatgpt-android-app/releases) and download the latest version's .apk file onto your Android device and install via your package manger. Or download the latest .apk file onto your computer and install via USB/Wifi debugging with ADB: `adb install danielbatesuk-chatgpt-v*.*.*.apk`. 
+
+### Screenshots
+
+![Screenshot-01](screenshot_01.jpg) ![Screenshot-02](screenshot_02.jpg) ![Screenshot-03](screenshot_03.jpg)
+
 ## Author
 
 ### **Daniel Bates**

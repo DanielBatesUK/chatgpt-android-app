@@ -20,7 +20,7 @@ import java.util.Objects;
 public class MainActivity extends AppCompatActivity {
 
     String githubURL = "https://github.com/DanielBatesUK/chatgpt-android-app";
-    String chatgptUrl = "https://chat.openai.com/chat";
+    String chatgptUrl = "https://chat.openai.com";
     String chatgptAuthUrl = "https://chat.openai.com/auth/login";
     String openAIUrl = "https://openai.com/";
 

@@ -1,4 +1,6 @@
-# ChatGPT-Android-App
+🔴⚠️ ChatGTP now has its own offical app on the [Google Play Store](https://play.google.com/store/apps/details?id=com.openai.chatgpt). Use that instead ⚠️🔴
+
+# [APP RETIRED] ChatGPT-Android-App
 
 ![GitHub Release](https://img.shields.io/github/v/release/DanielBatesUK/chatgpt-android-app
 ) ![GitHub last commit](https://img.shields.io/github/last-commit/DanielBatesUK/chatgpt-android-app
